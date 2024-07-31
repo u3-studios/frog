@@ -39,7 +39,7 @@ func _process(delta):
 	if direction == -1 and not ray_cast_down_left.is_colliding():
 		direction = 1
 		animated_sprite.flip_h = false
-		
+		print("no way")
 		
 	var thing=ray_cast_down_left.get_collider() as TileMap
 	if thing:
